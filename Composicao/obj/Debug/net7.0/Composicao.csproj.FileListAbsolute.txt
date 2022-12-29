@@ -1,0 +1,15 @@
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\bin\Debug\net7.0\Composicao.exe
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\bin\Debug\net7.0\Composicao.deps.json
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\bin\Debug\net7.0\Composicao.runtimeconfig.json
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\bin\Debug\net7.0\Composicao.dll
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\bin\Debug\net7.0\Composicao.pdb
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\obj\Debug\net7.0\Composicao.csproj.AssemblyReference.cache
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\obj\Debug\net7.0\Composicao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\obj\Debug\net7.0\Composicao.AssemblyInfoInputs.cache
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\obj\Debug\net7.0\Composicao.AssemblyInfo.cs
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\obj\Debug\net7.0\Composicao.csproj.CoreCompileInputs.cache
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\obj\Debug\net7.0\Composicao.dll
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\obj\Debug\net7.0\refint\Composicao.dll
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\obj\Debug\net7.0\Composicao.pdb
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\obj\Debug\net7.0\Composicao.genruntimeconfig.cache
+C:\Users\vfarias\source\repos\Aprendizado POO C#\Composição\folhacomposicao\Composicao\obj\Debug\net7.0\ref\Composicao.dll

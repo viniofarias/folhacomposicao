@@ -14,16 +14,24 @@ namespace Composicao.Entities
         public WorkerLevel Level { get; set; }
         public double BaseSalary { get; set; }
         public Department Dept { get; set; }
-        public HourContract DataContract { get; set; }
+        public List<HourContract> Contract { get; set; } = new List<HourContract>();
 
-        public Worker(string name, WorkerLevel level, double baseSalary, Department dept, HourContract dataContract)
+        public Worker()
+        {
+        }
+
+        public Worker(string name, WorkerLevel level, double baseSalary, Department dept, List<HourContract> contract)
         {
             Name = name;
             Level = level;
             BaseSalary = baseSalary;
             Dept = dept;
-            DataContract = dataContract;
+            Contract = contract;
         }
+        public override string ToString()
+        {
+            return Name + ", " + Level + ", " + BaseSalary + ", " + Dept;
 
+        }
     }
 }

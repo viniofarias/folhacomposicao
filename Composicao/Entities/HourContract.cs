@@ -23,5 +23,9 @@ namespace Composicao.Entities
         {
             return ValuePerHour * Hours;
         }
+        public override string ToString()
+        {
+            return Date.ToShortDateString() + ", " + ValuePerHour + ", " + Hours;
+        }
     }
 }
