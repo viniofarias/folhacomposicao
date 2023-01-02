@@ -3,6 +3,7 @@ using Composicao.Entities.Enum;
 using Composicao.Entities;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using System.Globalization;
 
 namespace Composicao
 {
@@ -12,8 +13,9 @@ namespace Composicao
         {
             WorkerLevel funcLevel = new WorkerLevel();
             string[] vecDate = new string[3];
+            string[] vecDateIncome = new string[2];
             DateTime date = new DateTime();
-            List<HourContract> contract = new List<HourContract>();
+            //List<HourContract> contract = new List<HourContract>();
 
 
         Console.WriteLine("Digite o nome do departamento: ");
@@ -41,6 +43,8 @@ namespace Composicao
 
             Console.Write("Base Salarial: ");
             double salary = double.Parse(Console.ReadLine());
+            Worker x = new Worker(name, funcLevel, salary, dept); // construtor atualizado
+
 
             Console.WriteLine("Quantos Contratos para esse funcionário? ");
             int n = int.Parse(Console.ReadLine());
@@ -60,24 +64,22 @@ namespace Composicao
                 Console.Write("Duração (horas): ");
                 int timer = int.Parse(Console.ReadLine());
 
-                contract.Add(new HourContract(date, valueHour, timer));
+                HourContract contract = new HourContract(date, valueHour, timer);
+                x.addContract(contract);
                 //add lista de contratos e ter cuidado com variável que existe apenas dentro do laço
             }
-            Worker x= new Worker(name, funcLevel, salary, dept, contract);
-            //Console.Write("Digite o mês e o ano para calcular o rendimento do funcionário:  ");
-            //
-            //Console.Write("Nome: ");
-            //name = Console.ReadLine();
+            Console.Write("Digite o mês e o ano para calcular o rendimento do funcionário:  ");
+            vecDateIncome = Console.ReadLine().Split('/');
+            int monthIncome = int.Parse(vecDateIncome[0]);
+            int yearIncome = int.Parse(vecDateIncome[1]);
 
-            //Console.WriteLine("Departamento");
-            //dep = (Console.ReadLine());
-            //dept = new Department(dep);
-            Console.WriteLine(x);
-            foreach (HourContract obj in contract)
-            {
-                Console.WriteLine(obj);
-            }
+            double gain = x.income(yearIncome, monthIncome);
+            Console.WriteLine("Nome: {0}",x.Name);
+            Console.WriteLine("Departamento {0}",x.Dept.Name);
+            Console.WriteLine("Level: {0}", x.Level);
+            Console.WriteLine("Income for {0}/{1}: {2}", monthIncome, yearIncome, gain.ToString("F2", CultureInfo.InvariantCulture));
 
+           
         }
     }
 }

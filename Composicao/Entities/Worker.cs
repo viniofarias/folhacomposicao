@@ -20,14 +20,38 @@ namespace Composicao.Entities
         {
         }
 
-        public Worker(string name, WorkerLevel level, double baseSalary, Department dept, List<HourContract> contract)
+        public Worker(string name, WorkerLevel level, double baseSalary, Department dept)
         {
             Name = name;
             Level = level;
             BaseSalary = baseSalary;
             Dept = dept;
-            Contract = contract;
+            // Eliminado a lista do construtor. Será adicionado por método addContract 
         }
+
+        public void addContract(HourContract contract)
+        {
+            Contract.Add(contract);
+        }
+
+        public void removeContract(HourContract contract)
+        {
+            Contract.Remove(contract);
+        }
+
+        public double income(int year, int month)
+        {
+            double x = BaseSalary;
+            foreach(HourContract obj in Contract)
+            {
+                if(obj.Date.Year == year && obj.Date.Month == month)
+                {
+                    x +=obj.totalValue(); 
+                }
+            }
+            return x;
+        }
+
         public override string ToString()
         {
             return Name + ", " + Level + ", " + BaseSalary + ", " + Dept;
