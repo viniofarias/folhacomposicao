@@ -28,18 +28,7 @@ namespace Composicao
 
             Console.Write("Digite o Level/Cargo (JUNIOR/MD_LEVEL/SENIOR): ");
             string level = Console.ReadLine();
-            switch(level) 
-            {
-                case "JUNIOR":
-                    funcLevel = Enum.Parse<WorkerLevel>("JUNIOR");
-                    break;
-                case "MD_LEVEL":
-                    funcLevel = Enum.Parse<WorkerLevel>("MD_LEVEL");
-                    break;
-                case "SENIOR":
-                    funcLevel = Enum.Parse<WorkerLevel>("SENIOR");
-                    break;
-            }
+            funcLevel = Enum.Parse<WorkerLevel>(Console.ReadLine());
 
             Console.Write("Base Salarial: ");
             double salary = double.Parse(Console.ReadLine());
